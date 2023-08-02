@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+
+.p1 {
+  background-color: aqua;
+}
+
+.p2 {
+  background-color: aquamarine;
+}
+
+img {
+  align-self: center;
+  align-self: stretch;
+}
+
+.p3 {
+  background-color: bisque;
+}

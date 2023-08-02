@@ -1,0 +1,58 @@
+
+git init 
+mkdir project
+
+touch names.txt
+
+git status
+git add .   OR git add names.txt 
+
+git commit -m "This is a names file"
+
+
+vi names.txt (edit txt)
+
+Kunal
+Adnan
+Rupesh
+
+cat names.txt (view txt)
+
+git restore --staged names.txt (removes the commit)
+
+
+git log (to view the entire history)
+
+rm -rf names.txt
+git status
+git add .
+git commit -m "names.txt file deleted"
+git log
+
+
+if you want to reset log then copy the hash id of that log:
+git reset (id)
+
+
+git stash (to go back)
+git stash pop (to go front)
+
+
+
+TO ADD FILES OF YOUR LOCAL FILES INTO YOUR GITHUB REPO:
+
+git remote add origin https:// your file url
+git push origin master
+
+
+TO CREATE A BRANCH:
+git branch (Name)
+
+
+TO SWITCH BACK TO MAIN:
+git checkout main
+
+
+TO MERGE BRANCHES:
+
+git merge feature (the branch which the head is currently pointing to will merge with the given name)

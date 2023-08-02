@@ -1,0 +1,67 @@
+
+display:grid
+
+grid-template-columns: 200px 200px 100px 100px (this will create 4 columns)
+                                        3fr 1fr 1fr 1fr   (3+1+1+1 = 6; the first column being 3fraction it will take up half the space;)
+			repeat(4,1fr);
+			fr lets us make responsive designs which stretchs.
+
+
+grid-template-rows: 300px 200px; ( this will create 2 rows) ( Also called as explicit rows)
+
+note: If there are more grid items than grid cells then another row will be created for the grid items. 
+	They are called as implicit rows(they will have auto property)
+
+column-gap:30px;
+row-gap:10px;
+
+
+
+grid terminologies:
+
+grid cells
+grid lines
+grid items
+grid rows
+grid columns
+gaps(gutters)
+grid track/column
+grid track/row
+
+
+grid container vs grid items:
+
+grid container:
+grid-template-rows
+grid-tmplate-columns
+row-gap
+column-gap
+justify-items:stretch;   start;,   center;    end;
+align:-items: stretch;   start;   center;    end
+
+justify-content: start;    center;    end; .... ( not imp.)
+align-content:  start;     center;   end;   ....  (not imp.)
+both only used when item is bigger than the container
+
+
+
+grid item properties:
+
+grid-column: 12,3,4, 
+grid-row: 1,2,3,4
+
+justify-self:stretch;   start;   center;   end
+align-self: stretch;   start;    center;   end
+
+
+Notes:
+In a grid the tallest item height is applied to the row track.
+auto property will allow to only take the required minimum space.
+
+
+
+.element{
+	grid-column:2/3;   (This will move the element in the grid cells which lies between the grid lines 2 3 of the column)
+	grid-row:1/2;         (This will move the element in the grid cells which lies between the grid lines 1 2 of the row )
+			if there exists any element there already then they will shift to 2 3
+}

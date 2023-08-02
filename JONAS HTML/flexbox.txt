@@ -1,0 +1,15 @@
+
+flex-grow:0
+->Elements will take more space then the container
+
+flex-shrink:1
+->Elements taking more space will be within the container
+
+
+flex: 0 0 auto
+
+0->flex-grow
+0->flex-shrink
+auto->flex-basis
+
+(Check pdf)
